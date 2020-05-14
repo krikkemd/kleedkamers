@@ -42,7 +42,9 @@ html {
 }
 
 // Color Variables
+$color-purple-light: #36265b;
 $color-purple: #2b1e49;
+$color-purple-dark: #22183a;
 $color-red: #e73454;
 $color-pink: #e1617a;
 $color-blue: #008bbc;
@@ -52,9 +54,11 @@ $color-white: #fff;
   font-family: sans-serif;
   min-height: 100vh;
   padding: 2rem;
-  background-color: $color-purple;
+  // background-color: $color-purple;
   color: $color-white;
-
+  background-image: linear-gradient(rgba(40, 30, 73, 1), rgba(0, 0, 0, 0.5)), url(../img/ballerina.jpg);
+  background-size: cover;
+  background-position: center;
   display: grid;
   grid-template-rows: repeat(3, min-content) 1fr;
 
