@@ -92,7 +92,8 @@ function processZalen(zaalData) {
 
     // Only set value if it exists
     if (voorstelling.items[3].value !== null) {
-      vb = voorstelling.items[3].value.contact.name;
+      vb = voorstelling.items[3].value.contact.name ||
+        voorstelling.items[3].value.contact.person?.name;
     }
 
     // Only set value if it exists
